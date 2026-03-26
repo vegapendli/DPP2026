@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: banking-app
+data:
+  BACKEND_URL: http://backend:8080
+  PORT: "3000"
