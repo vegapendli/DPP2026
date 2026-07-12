@@ -1,0 +1,423 @@
+AWS Resource Inventory Report
+Generated on: Thu May  7 09:32:05 EDT 2026
+==========================================
+
+##########################################
+Region: ap-south-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: eu-north-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: eu-west-3
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: eu-west-2
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: eu-west-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ap-northeast-3
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ap-northeast-2
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ap-northeast-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ca-central-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: sa-east-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ap-southeast-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: ap-southeast-2
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: eu-central-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: us-east-1
+##########################################
+
+EC2 Instances:
+------------------------------------------------
+|               DescribeInstances              |
++----------------------+----------+------------+
+|  i-088af339dba736af6 |  running |  t3.small  |
+|  i-0bcd62586f57053e0 |  running |  t3.small  |
+|  i-05feb44dbf19fe776 |  running |  t3.small  |
++----------------------+----------+------------+
+
+EBS Volumes:
+-------------------------------------------
+|             DescribeVolumes             |
++------------------------+-----+----------+
+|  vol-0d19df8506b1a9442 |  20 |  in-use  |
+|  vol-073de6bf9b39a36b6 |  20 |  in-use  |
+|  vol-0b02a7dbfe32b3101 |  20 |  in-use  |
++------------------------+-----+----------+
+
+S3 Buckets:
+2026-04-22 08:48:43 pharma-tf-state-886492072540
+
+RDS Instances:
+--------------------------------------------------
+|               DescribeDBInstances              |
++----------------------+-----------+-------------+
+|  pharma-dev-postgres |  postgres |  available  |
++----------------------+-----------+-------------+
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------------------
+|      ListClusters      |
++------------------------+
+||       clusters       ||
+|+----------------------+|
+||  pharma-dev-cluster  ||
+|+----------------------+|
+
+Load Balancers:
+
+NAT Gateways:
+----------------------------------------
+|          DescribeNatGateways         |
++------------------------+-------------+
+|  nat-032af31ee811df19c |  available  |
++------------------------+-------------+
+
+##########################################
+Region: us-east-2
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: us-west-1
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
+##########################################
+Region: us-west-2
+##########################################
+
+EC2 Instances:
+
+EBS Volumes:
+
+RDS Instances:
+
+Lambda Functions:
+
+ECS Clusters:
+
+EKS Clusters:
+--------------
+|ListClusters|
++------------+
+
+Load Balancers:
+
+NAT Gateways:
+
