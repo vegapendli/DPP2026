@@ -13,7 +13,7 @@ on:
 jobs:
   run-on-ec2:
     # Matches the labels set in scripts/install-runner.sh (--labels self-hosted,linux,ec2)
-    runs-on: [self-hosted, linux, ec2]
+    runs-on: [self-hosted, linux, X64]
 
     steps:
       - name: Prove this is your own machine
