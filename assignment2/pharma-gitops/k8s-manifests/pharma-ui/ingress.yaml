@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pharma-ui
+  namespace: dev
+  labels:
+    app: pharma-ui
+    version: "1.0.0"
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "ad837e307aa03468a9bd4282efd728ea-e0cdc70a0a77a1cd.elb.us-east-1.amazonaws.com"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pharma-ui
+                port:
+                  number: 80

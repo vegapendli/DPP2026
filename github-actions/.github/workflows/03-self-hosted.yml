@@ -1,0 +1,33 @@
+# Example 3: Self-Hosted Runner (EC2)
+# Trigger: manual, so you can run it on demand once your EC2 runner is online
+# Teaches: targeting a self-hosted runner, proving jobs execute on your own box
+#
+# Prerequisite: an EC2 instance registered as a runner for this repo.
+# See ../self-hosted-runner-ec2/README.md for the full setup walkthrough.
+
+name: 03 - Self Hosted Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-on-ec2:
+    # Matches the labels set in scripts/install-runner.sh (--labels self-hosted,linux,ec2)
+    runs-on: [self-hosted, linux, ec2]
+
+    steps:
+      - name: Prove this is your own machine
+        run: |
+          echo "Hostname: $(hostname)"
+          echo "Kernel: $(uname -a)"
+          echo "Whoami: $(whoami)"
+
+      - name: Show it's a persistent filesystem (unlike hosted runners)
+        run: |
+          mkdir -p /tmp/gha-demo-state
+          echo "Run at $(date)" >> /tmp/gha-demo-state/history.log
+          echo "--- history so far ---"
+          cat /tmp/gha-demo-state/history.log
+
+      - name: Print who triggered the workflow
+        run: echo "Triggered by ${{ github.actor }} on branch ${{ github.ref_name }}"

@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars and fill in, or pass these as -var flags / TF_VAR_* env vars.
+# Do NOT commit terraform.tfvars if it contains the registration token — it's short-lived
+# but still a credential. See ../terraform/README.md for the recommended env-var approach.
+
+aws_region    = "us-east-1"
+instance_type = "t3.micro"
+key_name      = "my-keypair"
+ssh_cidr      = "203.0.113.10/32" # your IP; leave "" to disable inbound SSH entirely
+
+github_repo_url           = "https://github.com/<owner>/<repo>"
+runner_registration_token = "<paste short-lived token from Settings -> Actions -> Runners>"
+runner_name                = "gha-ec2-runner"

@@ -1,0 +1,24 @@
+# Example 1: Hello World
+# Trigger: runs every time you push to the main branch
+# Teaches: workflow structure, events, jobs, steps, run commands
+
+name: 01 - Hello World
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a message
+        run: echo "Hello from GitHub Actions and I m testing!"
+
+      - name: Print the date
+        run: date
+
+      - name: Print who triggered the workflow
+        run: echo "Triggered by ${{ github.actor }} on branch ${{ github.ref_name }}"
